@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are these words in the Bible?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 70%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-image 0.5s ease, background-color 0.5s ease;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        .bible-word {
+        color: green;
+        font-weight: bold;
+        }
+
+        #result {
+            margin-top: 10%;
+            font-size: 1.2em;
+            transition: text-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are these words in the Bible?</h1>
+        <input type="text" id="sentence-input" placeholder="Type your sentence here">
+        <p id="highlighted-text" style="white-space: pre-wrap;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
